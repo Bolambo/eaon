@@ -1,135 +1,179 @@
 import Container from "../../components/ui/Container";
+import Link from "next/link";
 
 const capabilities = [
   {
-    title: "Operational Readiness",
+    title: "Operational Coordination",
     description:
-      "Structured support for field execution, service coordination, and responsive operational delivery across energy-sector environments.",
+      "Structured coordination across project activities, ensuring alignment, clarity, and efficient execution in dynamic environments.",
   },
   {
-    title: "Technical Coordination",
+    title: "Resource Management",
     description:
-      "A disciplined approach to aligning technical requirements, resources, and delivery expectations with professionalism and clarity.",
+      "Effective planning and management of materials, personnel, and logistics to support consistent operational delivery.",
   },
   {
-    title: "Service Reliability",
+    title: "Project Support Readiness",
     description:
-      "Focused on dependable execution, strong communication, and consistent support standards that reinforce client confidence.",
+      "Preparedness to support a range of operational and project requirements with disciplined and responsive execution.",
   },
   {
-    title: "Professional Responsiveness",
+    title: "Quality-Focused Execution",
     description:
-      "A service mindset built around timely coordination, practical support, and clear communication across project and operational needs.",
+      "Strong emphasis on maintaining professional standards, consistency, and accountability across all service engagements.",
   },
 ];
 
 const strengths = [
   {
-    title: "Execution Discipline",
+    title: "Structured Processes",
     description:
-      "We value organized service delivery, clear coordination, and dependable execution standards that support stronger operational outcomes.",
+      "Clearly defined workflows and operational structure guiding all service delivery activities.",
   },
   {
-    title: "Field-Oriented Support",
+    title: "Responsive Delivery",
     description:
-      "Our positioning reflects an understanding of the practical demands, responsiveness, and structure required across field and project environments.",
+      "Ability to adapt and respond efficiently to evolving operational and project demands.",
   },
   {
-    title: "Client-Focused Alignment",
+    title: "Professional Discipline",
     description:
-      "We aim to align our support approach with client expectations, operational requirements, and the importance of professional service conduct.",
+      "Commitment to maintaining high standards of conduct, coordination, and execution.",
   },
 ];
 
 export default function CapabilitiesPage() {
   return (
-    <main className="bg-white py-24">
+    <main className="bg-[#0a1726] text-white py-20">
       <Container>
-        <section className="max-w-3xl">
-          <div className="inline-flex items-center rounded-full border border-sky-100 bg-sky-50/70 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-700">
-            Capabilities
+
+        {/* HERO */}
+        <section className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+
+          <div className="relative h-[220px] sm:h-[260px] lg:h-[340px] rounded-[24px] lg:rounded-[28px] overflow-hidden">
+            <div className="absolute inset-0 bg-[url('/images/capabilities-hero.webp')] bg-cover bg-center" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a1726]/45 via-[#0a1726]/15 to-transparent" />
           </div>
 
-          <h1 className="mt-6 text-4xl font-semibold tracking-[-0.03em] text-slate-900 md:text-5xl">
-            Built to support evolving energy-sector demands
-          </h1>
+          <div className="max-w-2xl lg:ml-auto">
+            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-300">
+              Our Capabilities
+            </div>
 
-          <p className="mt-6 text-base leading-8 text-slate-600 md:text-lg">
-            <strong className="font-semibold text-slate-900">
-              EAON Oil and Energy Services Limited
-            </strong>{" "}
-            is positioned to support energy-focused operations through practical
-            coordination, structured service delivery, and a quality-driven
-            operating approach.
-          </p>
+            <h1 className="mt-6 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
+              Strong operational capability supporting energy sector delivery
+            </h1>
 
-          <p className="mt-6 text-base leading-8 text-slate-600 md:text-lg">
-            Our capabilities reflect operational discipline, technical
-            alignment, and dependable support standards suited to demanding
-            project and field environments.
-          </p>
+            <p className="mt-6 text-base leading-8 text-slate-300 md:text-lg">
+              EAON operates with a structured approach to supporting operational,
+              technical, and project-based activities across the oil and energy
+              sector.
+            </p>
+
+            <p className="mt-6 text-base leading-8 text-slate-300 md:text-lg">
+              Our capabilities are built around coordination, responsiveness,
+              disciplined execution, and a strong commitment to delivering
+              dependable support services.
+            </p>
+          </div>
+
         </section>
 
-        <section className="mt-14 grid gap-5 md:grid-cols-2">
+        {/* CAPABILITIES GRID */}
+        <section className="mt-12 grid gap-6 sm:grid-cols-2">
           {capabilities.map((item) => (
             <article
               key={item.title}
-              className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_12px_40px_rgba(15,23,42,0.05)]"
+              className="group rounded-[26px] border border-white/10 bg-white/[0.04] p-6 transition duration-300 hover:-translate-y-1 hover:bg-white/[0.06]"
             >
-              <h2 className="text-xl font-semibold tracking-[-0.02em] text-slate-900">
+              <h2 className="text-lg font-semibold">
                 {item.title}
               </h2>
 
-              <div className="mt-3 h-px w-12 bg-sky-200" />
+              <div className="mt-3 h-px w-10 bg-sky-400/40 transition group-hover:w-14" />
 
-              <p className="mt-4 text-sm leading-7 text-slate-600">
+              <p className="mt-4 text-sm leading-7 text-slate-300">
                 {item.description}
               </p>
             </article>
           ))}
         </section>
 
-        <section className="mt-20 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+        {/* STRENGTHS */}
+        <section className="mt-16 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+
           <div className="max-w-2xl">
-            <div className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-700">
+            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-sky-300">
               Operational Strengths
             </div>
 
-            <h2 className="mt-6 text-3xl font-semibold tracking-[-0.03em] text-slate-900 md:text-4xl">
-              Capability positioning shaped by discipline and service focus
+            <h2 className="mt-6 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">
+              Built on structure, responsiveness, and professional discipline
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-slate-600 md:text-lg">
-              In the energy sector, capability is measured not only by what a
-              company offers, but also by how effectively it supports execution,
-              responds to operational demands, and maintains professional
-              standards across service delivery.
+            <p className="mt-6 text-base leading-8 text-slate-300 md:text-lg">
+              Our operational strength lies in the ability to maintain structure
+              while adapting to the evolving demands of project and operational
+              environments.
             </p>
 
-            <p className="mt-6 text-base leading-8 text-slate-600 md:text-lg">
-              EAON’s positioning reflects a practical, support-oriented approach
-              built around coordination, reliability, and disciplined operational
-              engagement.
+            <p className="mt-6 text-base leading-8 text-slate-300 md:text-lg">
+              This enables EAON to deliver consistent, dependable, and professional
+              support across a wide range of energy-sector requirements.
             </p>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid gap-5">
             {strengths.map((item) => (
               <article
                 key={item.title}
-                className="rounded-[24px] border border-slate-200 bg-slate-50/80 p-6"
+                className="rounded-[24px] border border-white/10 bg-white/[0.04] p-6"
               >
-                <h3 className="text-lg font-semibold tracking-[-0.02em] text-slate-900">
+                <h3 className="text-lg font-semibold">
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-slate-600">
+                <p className="mt-3 text-sm leading-7 text-slate-300">
                   {item.description}
                 </p>
               </article>
             ))}
           </div>
+
         </section>
+
+        {/* CTA */}
+        <section className="mt-20">
+          <div className="rounded-[28px] border border-white/10 bg-gradient-to-br from-[#0f2238] to-[#0a1726] p-10 text-center">
+
+            <h2 className="text-2xl font-semibold sm:text-3xl">
+              Looking for a reliable operational partner?
+            </h2>
+
+            <p className="mt-4 max-w-xl mx-auto text-sm leading-7 text-slate-300">
+              EAON delivers structured, dependable, and professional support
+              tailored to meet complex operational and project demands.
+            </p>
+
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                href="/contact"
+                className="rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-500"
+              >
+                Contact Us
+              </Link>
+
+              <Link
+                href="/services"
+                className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
+              >
+                View Services
+              </Link>
+            </div>
+
+          </div>
+        </section>
+
       </Container>
     </main>
   );

@@ -2,73 +2,87 @@ import Container from "../../components/ui/Container";
 
 const reasons = [
   {
-    title: "Professional Execution",
+    title: "Structured Execution",
     description:
-      "We approach every engagement with planning discipline, structured coordination, and careful attention to service quality.",
+      "We deliver services through clearly defined processes, coordinated planning, and disciplined execution aligned with operational requirements.",
   },
   {
-    title: "Responsive Support",
+    title: "Operational Responsiveness",
     description:
-      "We are positioned to respond with clarity, professionalism, and dependable service support across operational requirements.",
+      "We maintain a responsive and adaptive approach, ensuring timely support and clear communication across all service engagements.",
   },
   {
-    title: "Industry Alignment",
+    title: "Industry-Focused Approach",
     description:
-      "Our service approach is shaped around the practical expectations, operating standards, and demands of the oil and energy sector.",
+      "Our service model is shaped around the practical expectations, operating standards, and demands of the oil and energy sector.",
   },
   {
-    title: "Quality & Reliability",
+    title: "Consistency & Reliability",
     description:
-      "We value consistency, responsible execution, and dependable service standards that help build long-term client confidence.",
+      "We prioritize dependable delivery, consistent service standards, and responsible execution to support long-term client confidence.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-[#f8fafc] py-28">
+    <section className="relative bg-[#0a1726] py-12 md:py-16">
+
+    {/* Background */}
+    <div className="absolute inset-0 bg-[linear-gradient(160deg,#0a1726_0%,#0f2238_45%,#091521_100%)]" />
+
+      {/* Grid Overlay */}
+      <div className="absolute inset-0 opacity-60 bg-[linear-gradient(rgba(56,189,248,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.04)_1px,transparent_1px)] bg-[size:80px_80px]" />
+
+      {/* Glow Accent (THIS IS THE KEY ADDITION) */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_40%,rgba(56,189,248,0.06),transparent_65%)]" />
+
       <Container>
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div className="relative grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          
+          {/* Left */}
           <div className="max-w-xl">
-            <div className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-700 shadow-sm">
+            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-300">
               Why Choose EAON
             </div>
 
-            <h2 className="mt-6 text-3xl font-semibold tracking-[-0.03em] text-slate-900 sm:text-4xl">
-              A focused and professional approach to energy service delivery
+            <h2 className="mt-6 text-4xl font-semibold leading-tight tracking-[-0.03em] text-white">
+              A disciplined and dependable approach to energy service delivery
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-slate-600">
-              We combine responsiveness, structured execution, and a commitment
-              to service quality to support clients with professionalism,
-              operational discipline, and dependable delivery standards.
+            <p className="mt-6 text-base leading-8 text-slate-300">
+              EAON combines structured execution, operational responsiveness, and
+              industry-focused service delivery to support clients with clarity,
+              professionalism, and reliable outcomes across demanding project environments.
             </p>
 
-            <div className="mt-8 flex items-center gap-4">
-              <div className="h-px w-24 bg-sky-200" />
+            <div className="mt-10 flex items-center gap-4">
+              <div className="h-px w-24 bg-sky-400/40" />
               <span className="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
-                Client Confidence
+                Client Assurance
               </span>
             </div>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2">
+          {/* Cards */}
+          <div className="grid gap-6 sm:grid-cols-2">
             {reasons.map((reason) => (
               <article
                 key={reason.title}
-                className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-[0_12px_40px_rgba(15,23,42,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(15,23,42,0.08)]"
+                className="group rounded-[30px] border border-white/10 bg-white/[0.03] backdrop-blur-md p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/[0.06]"
               >
-                <h3 className="text-lg font-semibold tracking-[-0.02em] text-slate-900">
+                <h3 className="text-lg font-semibold tracking-[-0.02em] text-white">
                   {reason.title}
                 </h3>
 
-                <div className="mt-3 h-px w-12 bg-sky-200" />
+                <div className="mt-3 h-px w-12 bg-sky-400/40 transition-all duration-300 group-hover:w-16" />
 
-                <p className="mt-4 text-sm leading-7 text-slate-600">
+                <p className="mt-4 text-sm leading-7 text-slate-300">
                   {reason.description}
                 </p>
               </article>
             ))}
           </div>
+
         </div>
       </Container>
     </section>
