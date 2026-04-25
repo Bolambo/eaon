@@ -1,6 +1,12 @@
 import Container from "../../components/ui/Container";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Capabilities",
+  description:
+    "Discover EAON’s operational capabilities including technical coordination, structured execution, and service reliability.",
+};
+
 const capabilities = [
   {
     title: "Operational Coordination",

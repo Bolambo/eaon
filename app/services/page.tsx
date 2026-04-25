@@ -1,6 +1,12 @@
 import Container from "../../components/ui/Container";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Services",
+  description:
+    "Explore EAON’s oil and energy services including engineering support, procurement, and operational execution.",
+};
+
 const services = [
   {
     title: "Engineering Support",

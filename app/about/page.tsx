@@ -1,5 +1,11 @@
 import Container from "../../components/ui/Container";
 
+export const metadata = {
+  title: "About",
+  description:
+    "Learn about EAON Oil and Energy Services Limited, our mission, operational approach, and commitment to dependable service delivery.",
+};
+
 export default function AboutPage() {
   return (
     <main className="bg-[#0a1726] text-white">

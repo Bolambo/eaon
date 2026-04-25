@@ -1,5 +1,11 @@
 import Container from "../../components/ui/Container";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with EAON Oil and Energy Services Limited for inquiries, partnerships, and service requests.",
+};
+
 export default function ContactPage() {
   return (
     <main className="bg-[#0a1726] text-white py-20">

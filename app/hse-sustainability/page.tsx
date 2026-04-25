@@ -1,5 +1,11 @@
 import Container from "../../components/ui/Container";
 
+export const metadata = {
+  title: "HSE & Sustainability",
+  description:
+    "EAON’s disciplined approach to health, safety, and environmental responsibility across all operations.",
+};
+
 const hseAreas = [
   {
     title: "Health & Safety Commitment",

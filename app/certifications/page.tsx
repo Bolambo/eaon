@@ -1,6 +1,12 @@
 import Container from "../../components/ui/Container";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Certifications",
+  description:
+    "View EAON’s certifications and compliance standards supporting safe and reliable energy operations.",
+};
+
 const certificationAreas = [
   {
     title: "Certificate of Incorporation",
