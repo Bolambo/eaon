@@ -23,40 +23,44 @@ const capabilities = [
 
 export default function CapabilitiesPreview() {
   return (
-    <section className="relative bg-[#0a1726] pt-8 md:pt-10 pb-16 md:pb-20">
-      {/* Dark Background Layer */}
+    <section className="relative bg-[#0a1726] pt-8 md:pt-10 pb-10 md:pb-12">
+      {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(160deg,#0a1726_0%,#0f2238_45%,#091521_100%)]" />
 
       <Container>
-        <div className="relative grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          
-          {/* Left Content */}
-          <div className="max-w-xl">
-            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-300">
-              Capabilities
+        <div className="relative grid gap-12 lg:grid-cols-[0.95fr_1.05fr] items-start">
+
+          {/* LEFT — FIXED */}
+          <div className="max-w-xl flex flex-col justify-between h-full">
+
+            <div>
+              <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-300">
+                Capabilities
+              </div>
+
+              <h2 className="mt-6 text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
+                Execution capability aligned with industry demands
+              </h2>
+
+              <p className="mt-6 text-base leading-8 text-slate-300">
+                EAON is positioned to support energy-sector operations through
+                structured coordination, technical alignment, and disciplined
+                service delivery. Our capabilities are built to ensure consistent
+                execution, operational clarity, and dependable support across
+                varying project environments.
+              </p>
             </div>
 
-            <h2 className="mt-6 text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl">
-              Execution capability aligned with industry demands
-            </h2>
-
-            <p className="mt-6 text-base leading-8 text-slate-300">
-              EAON is positioned to support energy-sector operations through
-              structured coordination, technical alignment, and disciplined
-              service delivery. Our capabilities are built to ensure consistent
-              execution, operational clarity, and dependable support across
-              varying project environments.
-            </p>
-
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-10 flex items-center gap-4">
               <div className="h-px w-24 bg-sky-400/40" />
               <span className="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
                 Execution Focus
               </span>
             </div>
+
           </div>
 
-          {/* Capability Cards */}
+          {/* RIGHT */}
           <div className="grid gap-5">
             {capabilities.map((item) => (
               <article
