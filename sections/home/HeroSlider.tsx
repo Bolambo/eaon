@@ -80,10 +80,15 @@ export default function HeroSlider() {
             key={i}
             onClick={() => setIndex(i)}
             aria-label={`Go to slide ${i + 1}`}
-            className={`h-2 w-2 rounded-full transition-all ${
-              i === index ? "bg-emerald-400 w-6" : "bg-white/40"
-            }`}
-          />
+            aria-current={i === index ? "true" : "false"}
+            className="relative flex items-center justify-center h-6 w-6"
+          >
+            <span
+              className={`h-2 w-2 rounded-full transition-all ${
+                i === index ? "bg-emerald-400 w-6" : "bg-white/40"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>
