@@ -10,6 +10,9 @@ export const metadata = {
   },
   description:
     "EAON Oil and Energy Services Limited provides structured, reliable support services across upstream and downstream energy operations.",
+  verification: {
+    google: "8kRzIRnZ-1PD8h8Sy3dCNBiTSrNJbtUf8h8kA4PJFfE",
+  },   
   openGraph: {
     title: "EAON Oil and Energy Services Limited",
     description:
