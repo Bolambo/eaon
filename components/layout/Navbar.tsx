@@ -18,19 +18,21 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0a1726] h-[72px] flex items-center">
+    <header className="sticky top-0 z-50 bg-[#0a1726] py-3">
       <div className="mx-auto max-w-7xl px-6 w-full flex items-center justify-between">
 
         {/* LOGO */}
         <Link href="/" className="flex items-center">
-          <Image
-            src="/eaon-logo.png"
-            alt="EAON Logo"
-            width={120}
-            height={40}
-            priority
-            className="object-contain"
-          />
+          <div className="bg-white rounded-lg px-2 py-1 flex items-center">
+            <Image
+              src="/eaon-logo.png"
+              alt="EAON Logo"
+              width={110}
+              height={36}
+              priority
+              className="object-contain"
+            />
+          </div>
         </Link>
 
         {/* DESKTOP NAV */}
