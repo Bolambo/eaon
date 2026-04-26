@@ -58,8 +58,8 @@ export default function ServicesPage() {
 
           {/* IMAGE */}
           <div className="relative h-[220px] sm:h-[260px] lg:h-[340px] rounded-[24px] lg:rounded-[28px] overflow-hidden">
-            <div className="absolute inset-0 bg-[url('/images/services-hero.webp')] bg-cover bg-center" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0a1726]/50 via-[#0a1726]/20 to-transparent" />
+            <div className="absolute inset-0 bg-[url('/images/services-hero.webp')] bg-cover bg-center brightness-110 contrast-105" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a1726]/30 via-[#0a1726]/10 to-transparent" />
           </div>
 
           {/* TEXT */}
