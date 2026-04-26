@@ -79,6 +79,7 @@ export default function HeroSlider() {
           <button
             key={i}
             onClick={() => setIndex(i)}
+            aria-label={`Go to slide ${i + 1}`}
             className={`h-2 w-2 rounded-full transition-all ${
               i === index ? "bg-emerald-400 w-6" : "bg-white/40"
             }`}
