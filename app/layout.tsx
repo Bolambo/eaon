@@ -3,6 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://eaonenergy.com"),
   title: {
     default: "EAON Oil and Energy Services Limited",
     template: "%s | EAON Oil and Energy Services Limited",
