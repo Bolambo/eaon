@@ -44,14 +44,14 @@ export default function HeroSlider() {
         >
           {/* IMAGE */}
           <div
-            className={`absolute inset-0 bg-cover bg-center brightness-110 transition-transform duration-[7000ms] ${
+            className={`absolute inset-0 bg-cover bg-center brightness-125 transition-transform duration-[7000ms] ${
               i === index ? "scale-105" : "scale-100"
             }`}
             style={{ backgroundImage: `url(${slide.image})` }}
           />
 
           {/* OVERLAY */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0a1726]/70 via-[#0a1726]/50 to-[#0a1726]/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0a1726]/70 via-[#0a1726]/50 to-[#0a1726]/50" />
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#0a1726]/70 to-transparent" />
 
           {/* CONTENT */}
@@ -65,7 +65,7 @@ export default function HeroSlider() {
                 {slide.title}
               </h1>
 
-              <p className="mt-6 text-slate-300 max-w-2xl text-lg">
+              <p className="mt-6 text-slate-200 max-w-2xl text-lg">
                 {slide.text}
               </p>
             </div>
