@@ -30,12 +30,12 @@ const metrics = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#0a1726] py-10 text-white sm:py-12 md:py-20">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_78%_15%,rgba(37,99,235,0.26),transparent_60%),radial-gradient(ellipse_42%_36%_at_16%_84%,rgba(34,197,94,0.16),transparent_58%),linear-gradient(160deg,#0a1726_0%,#0f2238_42%,#091521_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_78%_15%,rgba(37,99,235,0.35),transparent_60%),radial-gradient(ellipse_42%_36%_at_16%_84%,rgba(34,197,94,0.16),transparent_58%),linear-gradient(160deg,#0a1726_0%,#0f2238_42%,#091521_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(rgba(56,189,248,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.06)_1px,transparent_1px)] bg-[size:72px_72px]" />
       <div className="absolute inset-0 bg-[linear-gradient(125deg,transparent_56%,rgba(34,197,94,0.05)_56.2%,transparent_66%),linear-gradient(125deg,transparent_64%,rgba(14,165,233,0.05)_64.2%,transparent_74%)]" />
 
       <Container>
-        <div className="relative grid min-h-[480px] sm:min-h-[520px] lg:min-h-[560px] gap-0 overflow-hidden rounded-[36px] border border-sky-400/15 bg-[#0b1a2b]/80 shadow-[0_30px_90px_rgba(2,8,23,0.28)] lg:grid-cols-[1fr_400px]">
+        <div className="relative grid min-h-[480px] sm:min-h-[520px] lg:min-h-[560px] gap-0 overflow-hidden rounded-[36px] border border-sky-400/15 bg-[#0b1a2b]/100 shadow-[0_30px_90px_rgba(2,8,23,0.28)] lg:grid-cols-[1fr_400px]">
           <div className="relative flex flex-col justify-center border-b border-white/8 px-5 py-10 sm:px-8 sm:py-12 md:px-12 lg:border-b-0 lg:border-r lg:border-r-white/8 lg:px-14 lg:py-14">
             <div className="pointer-events-none absolute right-2 top-1/2 hidden -translate-y-1/2 select-none text-[140px] font-semibold uppercase leading-none tracking-[-0.08em] text-sky-300/8 lg:block xl:text-[180px]">
               EAON
@@ -63,7 +63,7 @@ export default function Hero() {
               responsiveness, and responsible delivery.
             </p>
 
-            <div className="relative mt-8 grid grid-cols-1 sm:grid-cols-3 max-w-[520px] overflow-hidden rounded-2xl border border-sky-400/15 bg-[#081523]/70 backdrop-blur-sm">
+            <div className="relative mt-8 grid grid-cols-1 sm:grid-cols-3 max-w-[520px] overflow-hidden rounded-2xl border border-sky-400/15 bg-[#081523]/90 backdrop-blur-sm">
               {metrics.map((item, index) => (
                 <div
                   key={item.value}
