@@ -23,11 +23,11 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link href="/" className="flex items-center">
-          <div className="bg-white rounded-lg px-2 py-1 flex items-center">
+          <div className="bg-white/95 rounded-lg px-2 py-1 flex items-center shadow-sm border border-white/10 backdrop-blur-sm">
             <Image
               src="/eaon-logo.png"
               alt="EAON Logo"
-              width={110}
+              width={105}
               height={36}
               priority
               className="object-contain"
