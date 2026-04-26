@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="relative flex flex-col items-center justify-between gap-3 border-t border-white/10 py-4 text-sm text-slate-500 md:flex-row">
+        <div className="relative flex flex-col items-center justify-between gap-3 border-t border-white/10 py-4 text-sm text-slate-200 md:flex-row">
           <p>© 2026 EAON Oil and Energy Services LTD. All rights reserved.</p>
           <p>Built for structured energy service delivery.</p>
         </div>
